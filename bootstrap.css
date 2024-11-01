@@ -1,0 +1,123 @@
+.navbar {
+    height: 100px;
+
+
+
+}
+
+container-fluid {
+    background-color: black;
+
+}
+
+.navbar-nav {
+    justify-content: center;
+    /* Center the nav items horizontally */
+    flex: 1;
+    /* Make the nav items take full width */
+}
+
+.nav-item {
+    margin-left: 20pxpx;
+
+    font-size: 20px;
+    font-weight: bold;
+    position: relative;
+    /* Required for absolute positioning of the pseudo-element */
+    text-decoration: none;
+    /* Remove default underline */
+    color: plum;
+    /* Text color */
+    padding: 5px 10px;
+    /* Padding around the item */
+    transition: color 0.3s ease;
+    /* Smooth transition for text color */
+
+
+}
+
+.nav-item::after {
+    content: "";
+    /* Required for the pseudo-element */
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 4px;
+    /* Thickness of the underline */
+    width: 100%;
+    /* Full width of the item */
+    background: plum;
+    /* Underline color */
+    transform: scaleX(0);
+    /* Start with scale 0 (invisible) */
+    transition: transform 0.3s ease;
+    /* Smooth transition for underline */
+}
+
+.nav-item:hover {
+    color: #007BFF;
+    /* Change text color on hover */
+}
+
+.nav-item:hover::after {
+    transform: scaleX(1);
+    /* Scale to full width on hover */
+}
+
+.navbar-brand {
+    font-weight: bolder;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-left: auto;
+}
+
+.dod img {
+    width: 550px;
+    /* Adjust to the container's width */
+    height: 310px;
+    /* Maintain aspect ratio */
+}
+
+.did img {
+    width: 100%;
+    /* Adjust to the container's width */
+    height: auto;
+    /* Maintain aspect ratio */
+
+
+
+}
+
+.asd {
+
+    width: 50%;
+}
+
+h2 {
+    margin-left: 39%;
+    margin-top: 20px;
+    font-style: italic;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.form1 {
+    padding-top: 3px;
+
+
+
+}
+
+.adv {
+
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.adc {
+    margin-top: 5px;
+    font-style: italic;
+    /* Italicize for a different look */
+    font-weight: bolder;
+}
